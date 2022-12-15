@@ -39,6 +39,8 @@
         margin: 0.625rem 3.125rem; }
       .container__cardRotate04 .cardsRotate04 .cardRotate04 .cardRotate04__paragraph {
         transition: all .4s linear .2s; }
+      .container__cardRotate04 .cardsRotate04 .cardRotate04 .cardRotate04__paragraph::selection {
+        background: #006685; }
     .container__cardRotate04 .cardsRotate04 .cardRotate04__1 {
       transform: translateZ(0.125rem) rotateX(0deg);
       opacity: 1; }
@@ -53,3 +55,10 @@
       transform: translateZ(0.063rem) rotateX(180deg); }
       .container__cardRotate04 .cardsRotate04:hover .cardRotate04 .cardRotate04__paragraph {
         transform: translateZ(0.063rem) rotateX(180deg); }
+      .container__cardRotate04 .cardsRotate04:hover .cardRotate04:after {
+        content: '';
+        width: 18.75rem;
+        height: 18.75rem;
+        position: absolute;
+        background: #0000008f;
+        z-index: -1; }

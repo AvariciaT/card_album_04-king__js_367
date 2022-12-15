@@ -30,6 +30,10 @@
             &__title, &__paragraph{ color: white; }
             &__paragraph{ text-align: center; margin: 0.625rem 3.125rem; }
             & .cardRotate04__paragraph{ transition: all .4s linear .2s; }
+            & .cardRotate04__paragraph::selection {
+                background: rgb(0, 102, 133);
+            }
+            
         }
         & .cardRotate04__1{
             transform: translateZ(0.125rem) rotateX(0deg);
@@ -49,6 +53,13 @@
             transform: translateZ(0.063rem) rotateX(180deg) ;
             & .cardRotate04__paragraph{
                 transform: translateZ(0.063rem) rotateX(180deg);
+            }
+            &:after{
+                content: '';   
+                @include size(18.75rem, 18.75rem);
+                position: absolute;
+                background: #0000008f;
+                z-index: -1;
             }
         }
     }
