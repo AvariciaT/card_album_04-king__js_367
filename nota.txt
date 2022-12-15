@@ -1,0 +1,15 @@
+- Comenzamos la gestion de cajas, para ver las imagenes. [X]
+- El admin de code para el html será manual con signos. [X]
+- Pare ver errores en editar el dato dela caja, probar hacelro por js. [X]
+
+
+
+---Gestion: una página para intercambiar los enlaces para el admin y supremo ---[X]
+- caja: buscador y random [X]
+- comments [X]
+- preguntas frecuentes: rellenar [X]
+- code: poner codigo personalizado [X]
+- users: Falta recuperar contraseña mediante el backup_pas (Hacer su autogeneracion por fecha) --> [ ]
+
+[mitad circulo: background:line-gradient( transparent 50%, #111 50%); transform:scale(1.1);]
+

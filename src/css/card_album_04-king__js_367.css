@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Si usamos un mixin */
+/* Y con Mixin */
+/* Mixin con Más de 1 argumento */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+.container__cardRotate04 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(#05ddf5, #007694);
+  gap: 15rem;
+  overflow: hidden;
+  perspective: 1000px; }
+  .container__cardRotate04 .cardsRotate04 {
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    position: relative;
+    transform-style: preserve-3d; }
+    .container__cardRotate04 .cardsRotate04 .cardRotate04 {
+      transition: all .4s linear .2s;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      display: grid;
+      place-items: center; }
+      .container__cardRotate04 .cardsRotate04 .cardRotate04__title, .container__cardRotate04 .cardsRotate04 .cardRotate04__paragraph {
+        color: white; }
+      .container__cardRotate04 .cardsRotate04 .cardRotate04__paragraph {
+        text-align: center;
+        margin: 10px 50px; }
+      .container__cardRotate04 .cardsRotate04 .cardRotate04 .cardRotate04__paragraph {
+        transition: all .4s linear .2s; }
+    .container__cardRotate04 .cardsRotate04 .cardRotate04__1 {
+      transform: translateZ(2px) rotateX(0deg);
+      opacity: 1; }
+    .container__cardRotate04 .cardsRotate04 .cardRotate04__2 {
+      transform: translateZ(1px) rotateX(0deg);
+      opacity: 0; }
+    .container__cardRotate04 .cardsRotate04:hover .cardRotate04__2 {
+      opacity: 1; }
+    .container__cardRotate04 .cardsRotate04:hover .cardRotate04__1 {
+      opacity: 0; }
+    .container__cardRotate04 .cardsRotate04:hover .cardRotate04 {
+      transform: translateZ(1px) rotateX(180deg); }
+      .container__cardRotate04 .cardsRotate04:hover .cardRotate04 .cardRotate04__paragraph {
+        transform: translateZ(1px) rotateX(180deg); }

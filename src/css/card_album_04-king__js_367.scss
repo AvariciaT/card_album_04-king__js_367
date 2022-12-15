@@ -1,0 +1,55 @@
+@import 'template/main';
+
+.container__cardRotate04{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include size(100vw, 100vh);
+    background: $fondo;
+    gap: 15rem;
+    overflow: hidden;
+
+    perspective: 1000px;
+
+    & .cardsRotate04{
+        @include size(300px, 300px);
+        background: transparent;
+        position: relative;
+
+        transform-style: preserve-3d;
+
+        & .cardRotate04{
+            transition: all .4s linear .2s;
+
+            position: absolute;
+            @include size(300px, 300px);
+            // background: $fondo3;
+            display: grid;
+            place-items: center;
+            &__title, &__paragraph{ color: white; }
+            &__paragraph{ text-align: center; margin: 10px 50px; }
+            & .cardRotate04__paragraph{ transition: all .4s linear .2s; }
+        }
+        & .cardRotate04__1{
+            transform: translateZ(2px) rotateX(0deg);
+            opacity: 1;
+        }
+        & .cardRotate04__2{
+            transform: translateZ(1px) rotateX(0deg);
+            opacity: 0;
+        }
+        &:hover .cardRotate04__2{
+            opacity: 1;
+        }
+        &:hover .cardRotate04__1{
+            opacity: 0;
+        }
+        &:hover .cardRotate04{
+            transform: translateZ(1px) rotateX(180deg) ;
+            & .cardRotate04__paragraph{
+                transform: translateZ(1px) rotateX(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import 'utils';
+
+$fondo: radial-gradient( #ff5c00,#963700);
+$fondo3: radial-gradient( rgb(34, 34, 34),#000000);
+$fondo2: radial-gradient( #fbff00,#969300);
+$fondo: radial-gradient( #05ddf5,#007694);
+
+$firstColor: #000000;
+$secondColor: #ff5c00;
+$thirdColor: #dfdfdf;
+
+$car4:  linear-gradient(
+        60deg,
+        #ff5e00 1%,
+        #d63900 42%,
+        #ad0600 49%,
+        #8a0000 51%,
+        #6b0000 51%,
+        #000000 50%,
+        #750000 49%,
+        #940000 49%,
+        #b80000 51%,
+        #db0000 58%,
+        #ff0000 99%
+      );
+$car5: linear-gradient(
+    330deg,
+    #ff5e00 1%,
+    #eb4a00 43%,
+    #d13400 50%,
+    #bd1c00 51%,
+    #a80000 51%,
+    #940000 49%,
+    #800000 49%,
+    #6b0000 50%,
+    #5c0000 57%,
+    #000000 99%
+  );
+
+
+*{
+    @include reset-pm();
+    box-sizing: border-box;
+    font-size: 16px;
+    // font-size: 40px;
+}
