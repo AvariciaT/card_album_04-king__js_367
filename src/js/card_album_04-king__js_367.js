@@ -7,6 +7,7 @@ function startApp() {
 const createData = async() => {
         try {
             let endpoint = 'http://127.0.0.1:5500/peliculas.json';
+            //API: https://jsonformatter.org/6fe33f
     
             const resp = await fetch(endpoint,{
                 method:"GET",
