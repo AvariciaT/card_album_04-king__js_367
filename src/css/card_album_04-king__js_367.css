@@ -17,39 +17,39 @@
   height: 100vh;
   background: radial-gradient(#05ddf5, #007694);
   gap: 15rem;
-  overflow: hidden;
-  perspective: 1000px; }
+  overflow: auto;
+  perspective: 62.5rem; }
   .container__cardRotate04 .cardsRotate04 {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     background: transparent;
     position: relative;
     transform-style: preserve-3d; }
     .container__cardRotate04 .cardsRotate04 .cardRotate04 {
       transition: all .4s linear .2s;
       position: absolute;
-      width: 300px;
-      height: 300px;
+      width: 18.75rem;
+      height: 18.75rem;
       display: grid;
       place-items: center; }
       .container__cardRotate04 .cardsRotate04 .cardRotate04__title, .container__cardRotate04 .cardsRotate04 .cardRotate04__paragraph {
         color: white; }
       .container__cardRotate04 .cardsRotate04 .cardRotate04__paragraph {
         text-align: center;
-        margin: 10px 50px; }
+        margin: 0.625rem 3.125rem; }
       .container__cardRotate04 .cardsRotate04 .cardRotate04 .cardRotate04__paragraph {
         transition: all .4s linear .2s; }
     .container__cardRotate04 .cardsRotate04 .cardRotate04__1 {
-      transform: translateZ(2px) rotateX(0deg);
+      transform: translateZ(0.125rem) rotateX(0deg);
       opacity: 1; }
     .container__cardRotate04 .cardsRotate04 .cardRotate04__2 {
-      transform: translateZ(1px) rotateX(0deg);
+      transform: translateZ(0.063rem) rotateX(0deg);
       opacity: 0; }
     .container__cardRotate04 .cardsRotate04:hover .cardRotate04__2 {
       opacity: 1; }
     .container__cardRotate04 .cardsRotate04:hover .cardRotate04__1 {
       opacity: 0; }
     .container__cardRotate04 .cardsRotate04:hover .cardRotate04 {
-      transform: translateZ(1px) rotateX(180deg); }
+      transform: translateZ(0.063rem) rotateX(180deg); }
       .container__cardRotate04 .cardsRotate04:hover .cardRotate04 .cardRotate04__paragraph {
-        transform: translateZ(1px) rotateX(180deg); }
+        transform: translateZ(0.063rem) rotateX(180deg); }

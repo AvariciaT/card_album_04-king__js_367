@@ -8,12 +8,12 @@
     @include size(100vw, 100vh);
     background: $fondo;
     gap: 15rem;
-    overflow: hidden;
+    overflow: auto;
 
-    perspective: 1000px;
+    perspective: 62.5rem;
 
     & .cardsRotate04{
-        @include size(300px, 300px);
+        @include size(18.75rem, 18.75rem);
         background: transparent;
         position: relative;
 
@@ -23,20 +23,20 @@
             transition: all .4s linear .2s;
 
             position: absolute;
-            @include size(300px, 300px);
+            @include size(18.75rem, 18.75rem);
             // background: $fondo3;
             display: grid;
             place-items: center;
             &__title, &__paragraph{ color: white; }
-            &__paragraph{ text-align: center; margin: 10px 50px; }
+            &__paragraph{ text-align: center; margin: 0.625rem 3.125rem; }
             & .cardRotate04__paragraph{ transition: all .4s linear .2s; }
         }
         & .cardRotate04__1{
-            transform: translateZ(2px) rotateX(0deg);
+            transform: translateZ(0.125rem) rotateX(0deg);
             opacity: 1;
         }
         & .cardRotate04__2{
-            transform: translateZ(1px) rotateX(0deg);
+            transform: translateZ(0.063rem) rotateX(0deg);
             opacity: 0;
         }
         &:hover .cardRotate04__2{
@@ -46,9 +46,9 @@
             opacity: 0;
         }
         &:hover .cardRotate04{
-            transform: translateZ(1px) rotateX(180deg) ;
+            transform: translateZ(0.063rem) rotateX(180deg) ;
             & .cardRotate04__paragraph{
-                transform: translateZ(1px) rotateX(180deg);
+                transform: translateZ(0.063rem) rotateX(180deg);
             }
         }
     }
